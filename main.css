@@ -51,13 +51,14 @@ body {
     background-color: #ffeae6;
 }
 
-.nav-cardapio .nav-link.active {
-    background-color: #e15f41;
+button[type="button"]:hover {
+    background-color: #f0431c;
     color: #ffeae6;
 }
 
-.nav-cardapio .nav-link:hover {
-    color: #e15f41;
+.nav-cardapio .nav-link.active {
+    background-color: #e15f41;
+    color: #ffeae6;
 }
 
 .social-links li {
