@@ -51,6 +51,15 @@ body {
     background-color: #ffeae6;
 }
 
+#cabecalho a:hover {
+    background-color: #fcd8c5;
+    color: #e15f41;
+}
+
+#cabecalho .nav .nav-link:hover {
+    color: #e15f41;
+}
+
 button[type="button"]:hover {
     background-color: #f0431c;
     color: #ffeae6;
@@ -88,7 +97,7 @@ button[type="button"]:hover {
     background-color: #e15f41;
     color: #ffeae6;
     text-align: center;
-    padding: 20px;
+    padding: 20px 48px;
 }
 
 .footer p {
@@ -108,6 +117,22 @@ button[type="button"]:hover {
     .navbar-brand {
         font-size: 30px;
         color: #ffeae6;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer .container {
+        padding: 0;
+    }
+
+    #about {
+        margin-top: 16px;
+    }
+
+    #margetop {
+        margin-top: 8px;
     }
 }
 
