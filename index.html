@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#fale-conosco" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i>
                             FALE CONOSCO
                         </a>
@@ -48,7 +48,7 @@
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-ristorante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -78,9 +78,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do ristorante.">
+                            <img src="images/ristorante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do ristorante.">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre o <span class="text-colored">ristorante</span></h2>
                             <p>
                                 Bem-vindo ao <strong>Fuoco Degli Dei</strong> - o sabor italiano da cidade! O nosso belo ristorante italiano é uma ode à rica cultura gastronômica da Itália, onde os sabores autênticos, aconchego e hospitalidade se unem para criar uma experiência inesquecível aos nossos clientes.
@@ -108,7 +108,7 @@
                     <div class="col-md-4">
                         <img src="images/eventos/aniversario.jpg" alt="Foto de cupcakes com velas acesas em cima" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-calendar-heart-fill"></i>
+                            <i class="bi bi-calendar-heart-fill text-color"></i>
                             Aniversários
                         </h3>
                         <p>
@@ -118,7 +118,7 @@
                     <div class="col-md-4">
                         <img src="images/eventos/casamento.jpg" alt="Foto de cupcakes com velas acesas em cima" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            <i class="bi bi-arrow-through-heart-fill text-color"></i>
                             Casamentos
                         </h3>
                         <p>
@@ -128,7 +128,7 @@
                     <div class="col-md-4">
                         <img src="images/eventos/confraternizacoes.jpg" alt="Foto de cupcakes com velas acesas em cima" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-people-fill"></i>
+                            <i class="bi bi-people-fill text-color"></i>
                             Confraternizações
                         </h3>
                         <p>
@@ -138,28 +138,289 @@
                 </div>
             </div>
         </section>
-        <section id="cardapio">
+        <section id="cardapio" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">
+                    <h2 class="section-title text-center mb-4">
                         Nosso <span class="text-colored">cardápio</span>
                     </h2>
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Entradas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nao-alcoolicas" class="fw-bold text-start nav-link text-colored active">DRINKS SEM ALCOÓL</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#alcoolicas" class="fw-bold text-start nav-link text-colored">DRINKS COM ALCOÓL</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">ENTRADAS</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">PRATOS PRINCIPAIS</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored mb-3">SOBREMESAS</button>
                         </nav>
                     </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="nao-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/coca-cola.jpg" alt="Latinhas de Coca-Cola">
+                                        <h5 class="section-title text-color fw-bold mt-2">Coca-Cola</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/fanta.jpg" alt="Latinha de Fanta Laranja">
+                                        <h5 class="section-title text-color fw-bold mt-2">Fanta Laranja</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/drpepper.jpg" alt="Latinha de Dr Pepper">
+                                        <h5 class="section-title text-color fw-bold mt-2">Dr Pepper</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/laranja.jpg" alt="Copo com suco de laranja">
+                                        <h5 class="section-title text-color fw-bold mt-2">Suco de laranja</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/fisalis.jpg" alt="Copo com suco de fisális">
+                                        <h5 class="section-title text-color fw-bold mt-2">Suco de fisális</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/amora.jpg" alt="Copo com suco de amora com limão">
+                                        <h5 class="section-title text-color fw-bold mt-2">Suco de amora com limão</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/manga.jpg" alt="Copo com suco de manga">
+                                        <h5 class="section-title text-color fw-bold mt-2">Suco de manga</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sem-alcool/morangokiwi.jpg" alt="Copos com smoothies de morango e kiwi">
+                                        <h5 class="section-title text-color fw-bold mt-2">Smoothies de morango e kiwi</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/chop.jpg" alt="Copos com cerveja">
+                                        <h5 class="section-title text-color fw-bold mt-2">Chop</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/tullamoredew.jpg" alt="Garrafa de Tullamore D.E.W.">
+                                        <h5 class="section-title text-color fw-bold mt-2">Tullamore D.E.W.</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/martini.jpg" alt="Taças com martíni">
+                                        <h5 class="section-title text-color fw-bold mt-2">Martíni</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/jack.jpg" alt="Garrafa de Capt'n Jack">
+                                        <h5 class="section-title text-color fw-bold mt-2">Capt'n Jack</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/peroni.jpg" alt="Garrafas de Peroni">
+                                        <h5 class="section-title text-color fw-bold mt-2">Peroni</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/jackdan.jpg" alt="Garrafa de Jack Daniel's">
+                                        <h5 class="section-title text-color fw-bold mt-2">Jack Daniel's</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/margarita.jpg" alt="Taça com margarita">
+                                        <h5 class="section-title text-color fw-bold mt-2">Margarita</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/com-alcool/vinho.jpg" alt="Garrafa de vinho tinto e uma taça ao lado">
+                                        <h5 class="section-title text-color fw-bold mt-2">Adega de vinhos</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/bruschetta.jpg" alt="Brusquettas">
+                                        <h5 class="section-title text-color fw-bold mt-2">Bruschetta</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/entrada.jpg" alt="Prato com queijo, salame e pão com manteiga">
+                                        <h5 class="section-title text-color fw-bold mt-2">Variado com queijo e salame</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/ostra.jpg" alt="Par de ostras ao bafo">
+                                        <h5 class="section-title text-color fw-bold mt-2">Ostra ao bafo</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/salmao.jpg" alt="Aperitivo de salmão">
+                                        <h5 class="section-title text-color fw-bold mt-2">Especial de salmão</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/risoles.jpg" alt="Prato com rissoles">
+                                        <h5 class="section-title text-color fw-bold mt-2">Rissole</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/sopatomate.jpg" alt="Tigelas com sopa de tomate">
+                                        <h5 class="section-title text-color fw-bold mt-2">Sopa de tomate</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/salada.jpg" alt="Prato com salada">
+                                        <h5 class="section-title text-color fw-bold mt-2">Salada de rúcula, tomate e cebola</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/entradas/espetinho.jpg" alt="Par de espetinhos veganos">
+                                        <h5 class="section-title text-color fw-bold mt-2">Espetinho vegano</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/camarao.jpg" alt="Macarronada ao alho e óleo com camarões">
+                                        <h5 class="section-title text-color fw-bold mt-2">Macarronada com camarões</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/rucula.jpg" alt="Pizza metade rúcula metade margherita">
+                                        <h5 class="section-title text-color fw-bold mt-2">Pizza de rúcula/margherita</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/tortellini.jpg" alt="Prato de tortellini com queijo e presunto">
+                                        <h5 class="section-title text-color fw-bold mt-2">Tortellini</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/risoto.jpg" alt="Prato de risoto de camarão">
+                                        <h5 class="section-title text-color fw-bold mt-2">Risoto de camarão</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/lasanha.jpg" alt="Prato de lasanha à bolonhesa">
+                                        <h5 class="section-title text-color fw-bold mt-2">Lasanha à bolonhesa</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/salmao.jpg" alt="Prato de salmão frito e porção de salada">
+                                        <h5 class="section-title text-color fw-bold mt-2">Salmão frito no azeite</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/pesto.jpg" alt="Prato de macarrão ao pesto">
+                                        <h5 class="section-title text-color fw-bold mt-2">Macarrão ao pesto</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/pratos-principais/pizza.jpg" alt="Pizza de champignon">
+                                        <h5 class="section-title text-color fw-bold mt-2">Pizza de champignon</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/cupcake.jpg" alt="Macarronada ao alho e óleo com camarões">
+                                        <h5 class="section-title text-color fw-bold mt-2">Cupcake de morango</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/panqueca.jpg" alt="Pizza metade rúcula metade margherita">
+                                        <h5 class="section-title text-color fw-bold mt-2">Panqueca de nozes</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/bololaranja.jpg" alt="Prato de tortellini com queijo e presunto">
+                                        <h5 class="section-title text-color fw-bold mt-2">Bolo de laranja</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/tortamorango.jpg" alt="Prato de risoto de camarão">
+                                        <h5 class="section-title text-color fw-bold mt-2">Torta de frutas vermelhas</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/bolo.jpg" alt="Prato de lasanha à bolonhesa">
+                                        <h5 class="section-title text-color fw-bold mt-2">Torta de chocolate e baunilha</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/muffins.jpg" alt="Prato de salmão frito e porção de salada">
+                                        <h5 class="section-title text-color fw-bold mt-2">Muffins</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/torta.jpg" alt="Prato de macarrão ao pesto">
+                                        <h5 class="section-title text-color fw-bold mt-2">Torta de framboesa</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded h-75" src="./images/cardapio/sobremesas/sorvete.jpg" alt="Pizza de champignon">
+                                        <h5 class="section-title text-color fw-bold mt-2">Sorvete napolitano</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form-campo">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">SEU NOME</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">SEU E-MAIL</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">SEU TELEFONE (OPCIONAL)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">SUA MENSAGEM</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">ENVIAR</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Acompanhe nossas <span class="text-colored"> redes sociais</span>
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Saiba nosso <span class="text-colored">endereço</span>
+                            </h3>
+                            <p>
+                                Av. Mauro Ramos n.º 2512, Bairro Centro - Florianópolis - SC
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer ps-5 fw-bold">
+            <div class="container">
+                <p>
+                    2023 &copy; FUOCO DEGLI DEI - TODOS OS DIREITOS RESERVADOS
+                </p>
+            </div>
+        </div>
+    </footer>
+    
 
     <script src="./library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
