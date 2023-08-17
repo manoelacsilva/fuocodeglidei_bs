@@ -49,6 +49,7 @@ body {
 
 #cardapio {
     background-color: #ffeae6;
+    min-height: 700px;
 }
 
 #cabecalho a:hover {
@@ -136,8 +137,23 @@ button[type="button"]:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .nav-cardapio button {
-        margin-right: 14px;
+@media (min-width: 768px) and (max-width: 991px) {
+    #cardapio {
+        min-height: 650px;
+    }
+
+    #cardapio .col-md-10 {
+        padding-left: 2.5rem;
+    }
+
+    #cardapio .col-md-3 {
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+    #cardapio .col-md-3 {
+        padding-bottom: 60px;
     }
 }
